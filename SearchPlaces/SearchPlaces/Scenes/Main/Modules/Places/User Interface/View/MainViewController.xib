@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SearchPlaces" customModuleProvider="target">
+            <connections>
+                <outlet property="placesTableView" destination="feR-07-36f" id="p6b-ho-aFW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-8E-UDw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOOKING FOR PLACES?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLF-VE-WHl">
+                    <rect key="frame" x="10" y="52" width="300" height="28"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="feR-07-36f">
+                    <rect key="frame" x="0.0" y="106" width="414" height="745"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yZW-V7-xAI"/>
+                        <outlet property="delegate" destination="-1" id="mel-T3-k7p"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuV-kf-b69">
+                    <rect key="frame" x="370" y="54" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="UvI-cc-DEV"/>
+                        <constraint firstAttribute="height" constant="28" id="uZz-1o-kcb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" image="search"/>
+                    <connections>
+                        <action selector="searchOnClick:" destination="-1" eventType="touchUpInside" id="ygE-jJ-XKl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZLF-VE-WHl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="1j3-Ef-nHa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="feR-07-36f" secondAttribute="bottom" constant="11" id="Hhl-17-ncY"/>
+                <constraint firstItem="TdL-8E-UDw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SjV-21-A9Z"/>
+                <constraint firstItem="TdL-8E-UDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Suk-6J-64K"/>
+                <constraint firstItem="ZLF-VE-WHl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="WXH-Az-oS8"/>
+                <constraint firstItem="feR-07-36f" firstAttribute="top" secondItem="ZLF-VE-WHl" secondAttribute="bottom" constant="26" id="h5k-oj-3Zr"/>
+                <constraint firstItem="feR-07-36f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iGz-He-e2u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QuV-kf-b69" secondAttribute="trailing" constant="16" id="pGu-3v-uUk"/>
+                <constraint firstItem="QuV-kf-b69" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="pKG-uD-saV"/>
+                <constraint firstItem="feR-07-36f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sVX-D5-z77"/>
+                <constraint firstItem="TdL-8E-UDw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uPP-cw-Lz6"/>
+                <constraint firstAttribute="bottom" secondItem="TdL-8E-UDw" secondAttribute="bottom" id="xKS-cA-age"/>
+            </constraints>
+            <point key="canvasLocation" x="34.782608695652179" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="2400" height="1800"/>
+        <image name="search" width="16" height="16"/>
+    </resources>
+</document>
