@@ -2,7 +2,7 @@
 //  PlacesDetailsWorkerMock.swift
 //  SearchPlacesTests
 //
-//  Created by Ruben Duarte on 31/1/22.
+//  Created by Carlos Villamizar on 31/1/22.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  SearchPlaces.swift
 //  SearchPlaces
 //
-//  Created by Ruben Duarte on 31/1/22.
+//  Created by Carlos Villamizar on 31/1/22.
 //
 
 import Foundation
@@ -22,6 +22,6 @@ struct Text: Codable {
 }
 
 struct Highlight: Codable {
-    let start: Int?  // duda si es bool
-    let length: Int? // duda si es bool// duda si es bool
+    let start: Int?
+    let length: Int?
 }

@@ -1,8 +1,8 @@
 //
 //  SearchPlacesAppDelegateTest.swift
-//  SmallWorld-iOSTests
+//  SearchPlacesTests
 //
-//  Created by Ruben Duarte on 26/11/21.
+//  Created by Carlos Villamizar on 26/11/21.
 //
 
 import UIKit

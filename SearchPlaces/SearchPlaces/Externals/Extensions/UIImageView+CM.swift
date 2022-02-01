@@ -1,8 +1,8 @@
 //
 //  UIImageView+CM.swift
-//  Compass Mining
+//  SearchPlacesTests
 //
-//  Created by Carlos Villamizar on 13/1/21.
+//  Created by Carlos Villamizar on 28/1/22.
 //
 
 import UIKit

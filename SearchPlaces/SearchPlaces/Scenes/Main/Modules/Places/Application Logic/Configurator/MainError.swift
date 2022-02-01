@@ -1,6 +1,6 @@
 //
 //  MainError.swift
-//  SmallWorld-iOS
+//  SearchPlacesTests
 //
 //  Created by Carlos Villamizar on 23/11/21.
 //
